@@ -12,7 +12,13 @@
 - run: sudo docker exec -it [CONTAINER_NAME] cp .env.example .env
 - run: sudo docker exec -it [CONTAINER_NAME] php artisan key:generate
 - go to http://localhost:8080/api/v1/users to use the endpoint.
-
+- to stop containers : 
+ - sudo docker container stop backend-assesment_webserver_1
+ - sudo docker container stop backend-assesment_app_1
+- to start containers :
+ - sudo docker container start backend-assesment_webserver_1
+ - sudo docker container start backend-assesment_app_1
+ 
 ## Usage
 
 - Two DataProviders (DataProviderX,DataProviderY).
