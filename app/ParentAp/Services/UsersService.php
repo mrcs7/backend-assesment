@@ -8,13 +8,26 @@ use App\ParentAp\ProviderInterface;
 
 class UsersService
 {
+    /**
+     * @var ProviderInterface
+     */
     private $provider;
 
+    /**
+     * UsersService constructor.
+     * @param ProviderInterface $provider
+     */
     public function __construct(ProviderInterface $provider)
     {
         $this->provider = $provider;
     }
 
+    /**
+     * List Data
+     *
+     * @param null $requestData
+     * @return array
+     */
     public function listData($requestData=null)
     {
         $dataCollection = collect($this->provider->getData());

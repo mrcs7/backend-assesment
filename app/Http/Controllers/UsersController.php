@@ -13,8 +13,17 @@ use App\ParentAp\Services\UsersService;
 
 class UsersController extends Controller
 {
+    /**
+     * @var usersService
+     */
     private $usersService;
 
+    /**
+     * List Users
+     *
+     * @param ListUsersRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function index(ListUsersRequest $request)
     {
         $provider = AllProviders::class;
