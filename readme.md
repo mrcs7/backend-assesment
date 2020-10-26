@@ -1,4 +1,5 @@
-
+## Challenge
+Read data from multiple data providers each has different structure and make some filtering operations in the combined data and make it easy to add new data providers without major changes and in a clean way. 
 ## Requirements
 
 - Docker.
